@@ -1,0 +1,11 @@
+/* .main{
+    background-color: red;
+} */
+.heading{
+    line-height: 60px;
+}
+.last-update{
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
