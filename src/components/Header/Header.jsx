@@ -35,7 +35,7 @@ export default function Header() {
              w-full items-center justify-center gap-12 h-14 fixed '>
           <div className=' rounded-md flex items-center justify-center gap-2  bg-white'>
             <img className=' w-5 ml-2' src={searchIcon}/>
-            <Input />
+            <Input  />
           </div>
           <ul className='flex  '>
             {navItems.map((item) => 
@@ -50,8 +50,8 @@ export default function Header() {
             )}
           </ul>
         </nav>
-        <div className='  flex items-center justify-between '> 
-        <div className=' rounded-md flex items-center justify-center gap-2  '>
+        <div className='  flex items-center justify-between  '> 
+        <div className=' rounded-md flex items-center bg-darkgrey  justify-center gap-2  '>
             <img className=' w-5 ml-2' src={searchIcon}/>
             <Input />
           </div>

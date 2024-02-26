@@ -16,7 +16,7 @@ const [open,setOpen] = React.useState(false)
             onClose={()=>setOpen(false)}
             onOpen={() => setOpen(true)} 
             >
-          <div className='drawer-links'>
+          <div className='drawer-links p-2 flex flex-col gap-3 text-sm text-darkgrey mt-3'>
             <a to="/"><p>Categories</p></a>
             <a to="/compare"><p>Website Builders</p></a>
             <a to="/dashboard"><p>Todays Deal</p></a>
