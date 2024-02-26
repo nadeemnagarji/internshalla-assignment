@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import searchIcon from "../../assets/search.png"
 
+import "./styles.css"
+import TempDrawer from './Drawer';
 FontAwesomeIcon
 export default function Header() {
    
@@ -29,8 +31,8 @@ export default function Header() {
     return(
         <header>
             <Container>
-            <nav className='flex bg bg-darkgrey
-             w-full items-center justify-center gap-12 h-14'>
+            <nav className='hidden md:flex bg bg-darkgrey navbar
+             w-full items-center justify-center gap-12 h-14 fixed '>
           <div className=' rounded-md flex items-center justify-center gap-2  bg-white'>
             <img className=' w-5 ml-2' src={searchIcon}/>
             <Input />
@@ -48,6 +50,13 @@ export default function Header() {
             )}
           </ul>
         </nav>
+        <div className='  flex items-center justify-between '> 
+        <div className=' rounded-md flex items-center justify-center gap-2  '>
+            <img className=' w-5 ml-2' src={searchIcon}/>
+            <Input />
+          </div>
+            <TempDrawer/>
+        </div>
             </Container>
         </header>
     )
