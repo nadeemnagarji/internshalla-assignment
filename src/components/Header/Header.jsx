@@ -51,8 +51,8 @@ export default function Header() {
           </ul>
         </nav>
         <div className='  flex items-center justify-between  '> 
-        <div className=' rounded-md flex items-center bg-darkgrey  justify-center gap-2  '>
-            <img className=' w-5 ml-2' src={searchIcon}/>
+        <div className=' rounded-md flex items-center  justify-center gap-2  '>
+            <img className=' w-5 ml-5' src={searchIcon} />
             <Input />
           </div>
             <TempDrawer/>
